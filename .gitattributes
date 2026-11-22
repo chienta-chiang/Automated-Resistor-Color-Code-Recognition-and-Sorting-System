@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Keep exported CAD meshes byte-for-byte
+*.stl -text

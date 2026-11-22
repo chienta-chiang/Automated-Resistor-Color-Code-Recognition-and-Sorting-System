@@ -1,0 +1,139 @@
+{
+  "description": "Firmware resistance-to-bin routing table (26 configured values plus unknown destination)",
+  "entries": [
+    {
+      "command": "12",
+      "layer": 1,
+      "angle_deg": 36
+    },
+    {
+      "command": "5600",
+      "layer": 1,
+      "angle_deg": 72
+    },
+    {
+      "command": "24000",
+      "layer": 1,
+      "angle_deg": 108
+    },
+    {
+      "command": "300",
+      "layer": 1,
+      "angle_deg": 144
+    },
+    {
+      "command": "75000",
+      "layer": 1,
+      "angle_deg": 180
+    },
+    {
+      "command": "15",
+      "layer": 1,
+      "angle_deg": 216
+    },
+    {
+      "command": "56000",
+      "layer": 1,
+      "angle_deg": 252
+    },
+    {
+      "command": "4700",
+      "layer": 1,
+      "angle_deg": 288
+    },
+    {
+      "command": "6200000",
+      "layer": 2,
+      "angle_deg": 36
+    },
+    {
+      "command": "9600",
+      "layer": 2,
+      "angle_deg": 72
+    },
+    {
+      "command": "4700000",
+      "layer": 2,
+      "angle_deg": 108
+    },
+    {
+      "command": "510",
+      "layer": 2,
+      "angle_deg": 144
+    },
+    {
+      "command": "7300",
+      "layer": 2,
+      "angle_deg": 180
+    },
+    {
+      "command": "750",
+      "layer": 2,
+      "angle_deg": 216
+    },
+    {
+      "command": "2800",
+      "layer": 2,
+      "angle_deg": 252
+    },
+    {
+      "command": "560",
+      "layer": 2,
+      "angle_deg": 288
+    },
+    {
+      "command": "3300000",
+      "layer": 2,
+      "angle_deg": 324
+    },
+    {
+      "command": "3900",
+      "layer": 3,
+      "angle_deg": 36
+    },
+    {
+      "command": "1000",
+      "layer": 3,
+      "angle_deg": 72
+    },
+    {
+      "command": "240000",
+      "layer": 3,
+      "angle_deg": 108
+    },
+    {
+      "command": "720000",
+      "layer": 3,
+      "angle_deg": 144
+    },
+    {
+      "command": "360000",
+      "layer": 3,
+      "angle_deg": 180
+    },
+    {
+      "command": "2200000",
+      "layer": 3,
+      "angle_deg": 216
+    },
+    {
+      "command": "820",
+      "layer": 3,
+      "angle_deg": 252
+    },
+    {
+      "command": "16000",
+      "layer": 3,
+      "angle_deg": 288
+    },
+    {
+      "command": "420",
+      "layer": 3,
+      "angle_deg": 324
+    }
+  ],
+  "unknown": {
+    "layer": 1,
+    "angle_deg": 324
+  }
+}

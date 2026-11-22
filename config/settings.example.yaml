@@ -1,0 +1,44 @@
+# Copy to config/settings.yaml (git-ignored) and edit for your machine.
+# All relative paths are resolved against the repository root.
+
+serial:
+  port: COM3            # Windows: COM3 | Linux: /dev/ttyACM0 | macOS: /dev/tty.usbmodemXXXX
+  baudrate: 9600        # Must match Serial.begin(9600) in the Arduino firmware. Do not change.
+  timeout_s: 1
+
+capture:
+  # Compatibility preview only; integrated uploads are consumed from queue_dir.
+  watch_file: uploads/photo.jpg
+  queue_dir: uploads/captures
+  queue_capacity: 32
+  resume_pending: false  # Review queued captures before explicitly enabling restart consumption.
+  poll_interval_s: 0.1
+
+upload_server:
+  host: 0.0.0.0         # Listen on the LAN so the ESP32-CAM can reach it. No authentication: trusted LAN only.
+  port: 8080
+  upload_path: /upload/upload.php   # Same path the ESP32-CAM firmware POSTs to
+  max_pixels: 16000000
+  max_bytes: 5242880    # 5 MiB
+
+vision:
+  resize_factor: 0.5    # Images are scaled by this factor before processing (800x600 -> 400x300)
+  hsv_thresholds: config/hsv_thresholds.json
+  morphology:           # Square structuring elements, side length in pixels
+    mask_dilate: 5      # grows the body/colour union mask in the first pass
+    band_erode: 3       # removes speckle from every colour mask (skipped for purple)
+    band_dilate: 9      # re-grows colour masks into solid bands
+    final_erode: 4      # shrinks the rotated-pass resistor mask
+  filters:
+    black_blob_area: 500   # black blobs larger than this are treated as background/shadow and removed
+    band_min_area: 100     # minimum contour area for a colour-band candidate
+    band_min_aspect: 1.0   # band must be taller than wide (h / w > this)
+    band_dedup_px: 6       # two candidates closer than this in x are the same band
+
+retry:
+  adjust_wait_s: 4      # Pause after MOTOR_ADJUST while the fan motor finishes (sequence takes ~3.66 s)
+
+mock:
+  input_dir: assets/sample_resistors
+  output_dir: output/mock_results
+  adjust_wait_s: 0.3    # Shortened wait so the offline demo runs quickly

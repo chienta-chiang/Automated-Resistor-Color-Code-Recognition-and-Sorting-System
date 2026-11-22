@@ -1,0 +1,164 @@
+{
+  "description": "Regression baseline for the eight sample resistor images",
+  "environment": {
+    "python": "3.11.4",
+    "opencv-python": "4.9.0.80",
+    "numpy": "1.26.4",
+    "pyserial": "3.5",
+    "PyYAML": "6.0.1"
+  },
+  "samples": [
+    {
+      "image": "resistor_01.jpg",
+      "sha256": "ac8a88b71a58acb0e84637331abc64fa9165653d5afb002df77294362773a151",
+      "command": "12",
+      "colors": [
+        "brown",
+        "red",
+        "black"
+      ],
+      "bands_found": 3,
+      "reversed_direction": true,
+      "routing_eligible": true,
+      "destination": {
+        "command": "12",
+        "layer": 1,
+        "angle_deg": 36
+      },
+      "ground_truth_ohms": null
+    },
+    {
+      "image": "resistor_02.jpg",
+      "sha256": "de1e28fcf7bfa89e5353ae33a1563f838d794b9ebae69e40f76c654599256d92",
+      "command": "300",
+      "colors": [
+        "orange",
+        "black",
+        "brown"
+      ],
+      "bands_found": 3,
+      "reversed_direction": true,
+      "routing_eligible": true,
+      "destination": {
+        "command": "300",
+        "layer": 1,
+        "angle_deg": 144
+      },
+      "ground_truth_ohms": null
+    },
+    {
+      "image": "resistor_03.jpg",
+      "sha256": "bcd1a74dc1d9dc6fefcb1fdcfc7c56d30503489b756ba64b2c087854f47fff4b",
+      "command": "510",
+      "colors": [
+        "green",
+        "brown",
+        "brown"
+      ],
+      "bands_found": 3,
+      "reversed_direction": false,
+      "routing_eligible": true,
+      "destination": {
+        "command": "510",
+        "layer": 2,
+        "angle_deg": 144
+      },
+      "ground_truth_ohms": null
+    },
+    {
+      "image": "resistor_04.jpg",
+      "sha256": "bb3004818266644c4c7049996834d0de583c71ddfe1dc6c5a5457ba3dd8792c5",
+      "command": "560",
+      "colors": [
+        "green",
+        "blue",
+        "brown"
+      ],
+      "bands_found": 3,
+      "reversed_direction": true,
+      "routing_eligible": true,
+      "destination": {
+        "command": "560",
+        "layer": 2,
+        "angle_deg": 288
+      },
+      "ground_truth_ohms": null
+    },
+    {
+      "image": "resistor_05.jpg",
+      "sha256": "1bc79cee27bb85528f0dc7c0293b822a3ed722f197a33a6ea80a0407799f303c",
+      "command": "750",
+      "colors": [
+        "purple",
+        "green",
+        "brown"
+      ],
+      "bands_found": 5,
+      "reversed_direction": false,
+      "routing_eligible": true,
+      "destination": {
+        "command": "750",
+        "layer": 2,
+        "angle_deg": 216
+      },
+      "ground_truth_ohms": null
+    },
+    {
+      "image": "resistor_06.jpg",
+      "sha256": "893dbf363c1170f8086f1f80780ced22a7b9f20f74a08d10e37b98d34b6b1ebc",
+      "command": "4700",
+      "colors": [
+        "yellow",
+        "purple",
+        "red"
+      ],
+      "bands_found": 3,
+      "reversed_direction": true,
+      "routing_eligible": true,
+      "destination": {
+        "command": "4700",
+        "layer": 1,
+        "angle_deg": 288
+      },
+      "ground_truth_ohms": null
+    },
+    {
+      "image": "resistor_07.jpg",
+      "sha256": "513c4aa1afab449344e3d131f062614da4aab1b03b8d06de4472b4a922ba4c75",
+      "command": "5600",
+      "colors": [
+        "green",
+        "blue",
+        "red"
+      ],
+      "bands_found": 3,
+      "reversed_direction": true,
+      "routing_eligible": true,
+      "destination": {
+        "command": "5600",
+        "layer": 1,
+        "angle_deg": 72
+      },
+      "ground_truth_ohms": null
+    },
+    {
+      "image": "resistor_08.jpg",
+      "sha256": "73196c28bacd48c447787db2c8491bee819a9eaed248081d8eaf43e8b6f786cd",
+      "command": "75000",
+      "colors": [
+        "purple",
+        "green",
+        "orange"
+      ],
+      "bands_found": 3,
+      "reversed_direction": false,
+      "routing_eligible": true,
+      "destination": {
+        "command": "75000",
+        "layer": 1,
+        "angle_deg": 180
+      },
+      "ground_truth_ohms": null
+    }
+  ]
+}

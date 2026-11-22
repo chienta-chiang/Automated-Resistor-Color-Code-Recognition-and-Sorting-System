@@ -1,0 +1,141 @@
+{
+  "_notes": [
+    "OpenCV HSV ranges: H in 0-179, S in 0-255, V in 0-255 (inclusive bounds for cv2.inRange).",
+    "Band evaluation order matters: when two colors match within filters.band_dedup_px along the resistor axis, the earlier entry takes precedence.",
+    "Gray and white thresholds are baseline intervals and may be tuned for local illumination using tools/hsv_calibrator.py."
+  ],
+  "body": {
+    "lower": [
+      24,
+      67,
+      83
+    ],
+    "upper": [
+      34,
+      173,
+      224
+    ]
+  },
+  "bands": {
+    "black": {
+      "lower": [
+        21,
+        61,
+        28
+      ],
+      "upper": [
+        42,
+        255,
+        75
+      ]
+    },
+    "brown": {
+      "lower": [
+        13,
+        120,
+        55
+      ],
+      "upper": [
+        23,
+        238,
+        151
+      ]
+    },
+    "red": {
+      "lower": [
+        6,
+        109,
+        66
+      ],
+      "upper": [
+        15,
+        232,
+        189
+      ]
+    },
+    "orange": {
+      "lower": [
+        14,
+        127,
+        141
+      ],
+      "upper": [
+        21,
+        188,
+        200
+      ]
+    },
+    "yellow": {
+      "lower": [
+        27,
+        131,
+        160
+      ],
+      "upper": [
+        33,
+        144,
+        203
+      ]
+    },
+    "green": {
+      "lower": [
+        34,
+        94,
+        62
+      ],
+      "upper": [
+        60,
+        189,
+        163
+      ]
+    },
+    "blue": {
+      "lower": [
+        39,
+        32,
+        53
+      ],
+      "upper": [
+        101,
+        102,
+        105
+      ]
+    },
+    "purple": {
+      "lower": [
+        112,
+        0,
+        79
+      ],
+      "upper": [
+        179,
+        73,
+        142
+      ]
+    },
+    "gray": {
+      "lower": [
+        0,
+        0,
+        90
+      ],
+      "upper": [
+        179,
+        25,
+        150
+      ]
+    },
+    "white": {
+      "lower": [
+        0,
+        0,
+        200
+      ],
+      "upper": [
+        179,
+        20,
+        255
+      ]
+    }
+  }
+}

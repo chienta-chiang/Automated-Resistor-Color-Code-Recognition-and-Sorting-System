@@ -1,0 +1,49 @@
+# Runtime output and captures
+/output/
+/uploads/
+*.part
+*.copy-part
+
+# Private academic and review material
+/AGENTS.md
+/docs/archive/
+/private/
+/review/
+/.agent/
+*.pdf
+*.docx
+*.pptx
+*.mp4
+*.zip
+*.bak
+
+# Machine configuration and credentials
+arduino_secrets.h
+/config/settings.yaml
+.env
+.env.*
+!.env.example
+
+# Python and tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+*.elf
+*.hex
+*.bin
+*.o
+*.a
+*.map
+*.eep
+*.d
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+# Tested direct dependency versions (Python 3.11.4 on Windows).
+numpy==1.26.4
+opencv-python==4.9.0.80
+pyserial==3.5
+PyYAML==6.0.1
+Pillow==12.2.0
